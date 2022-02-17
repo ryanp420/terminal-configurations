@@ -1,0 +1,55 @@
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: Q, mods: Control, action: quit }
+
+font:
+  size: 24
+  normal:
+    family: monospace
+    style: regular
+  bold:
+    family: monospace
+    style: bold
+  italic:
+    family: monospace
+    style: italic
+
+colors:
+  #tokyo night
+  primary:
+    background: "0x1a1b26"
+    foreground: "0xa9b1d6"
+
+  # Normal colors
+  normal:
+    black: "0x32344a"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xad8ee6"
+    cyan: "0x449dab"
+    white: "0x787c99"
+
+  # Bright colors
+  bright:
+    black: "0x444b6a"
+    red: "0xff7a93"
+    green: "0xb9f27c"
+    yellow: "0xff9e64"
+    blue: "0x7da6ff"
+    magenta: "0xbb9af7"
+    cyan: "0x0db9d7"
+    white: "0xacb0d0"
+
+window:
+  dimensions:
+    columns: 100
+    lines: 25
+
+  padding:
+    x: 10
+    y: 10
+
+  decorations: none
+  opacity: 1.0
