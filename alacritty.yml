@@ -2,6 +2,19 @@ key_bindings:
   - { key: N, mods: Control, action: SpawnNewInstance }
   - { key: Q, mods: Control, action: quit }
 
+selection: 
+  save_to_clipboard: true
+
+shell: 
+  program: /usr/bin/fish
+
+scrolling:
+  multiplier: 3
+
+draw_bold_text_with_bright_colors: true
+
+
+
 font:
   size: 24
   normal:
@@ -14,38 +27,39 @@ font:
     family: monospace
     style: italic
 
-colors:
-  #tokyo night
-  primary:
-    background: "0x1a1b26"
-    foreground: "0xa9b1d6"
-
-  # Normal colors
-  normal:
-    black: "0x32344a"
-    red: "0xf7768e"
-    green: "0x9ece6a"
-    yellow: "0xe0af68"
-    blue: "0x7aa2f7"
-    magenta: "0xad8ee6"
-    cyan: "0x449dab"
-    white: "0x787c99"
-
-  # Bright colors
-  bright:
-    black: "0x444b6a"
-    red: "0xff7a93"
-    green: "0xb9f27c"
-    yellow: "0xff9e64"
-    blue: "0x7da6ff"
-    magenta: "0xbb9af7"
-    cyan: "0x0db9d7"
-    white: "0xacb0d0"
-
+colors: #contrast
+    primary:
+      #background: '0x444444' - normal 
+      background: '#000000'
+      foreground: '0xdddddd'
+      #background: '#99ccff' #light blue 
+      #foreground: '#fdfe02' #yellow 
+      cursor:
+      text: '0xaaaaaa'
+      cursor: '0xffffff'
+    normal:
+      black:   '0x000000'
+      red:     '0xff0000'
+      green:   '0x00ff00'
+      yellow:  '0xffff00'
+      blue:    '0x0000ff'
+      magenta: '0xff00ff'
+      cyan:    '0x00ffff'
+      white:   '0xffffff'
+    bright:
+      black:   '0x000000'
+      red:     '0xff0000'
+      green:   '0x00ff00'
+      yellow:  '0xffff00'
+      blue:    '0x0000ff'
+      magenta: '0xff00ff'
+      cyan:    '0x00ffff'
+      white:   '0xffffff'
+  
 window:
   dimensions:
-    columns: 100
-    lines: 25
+    columns: 80
+    lines: 24
 
   padding:
     x: 10

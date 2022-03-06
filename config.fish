@@ -2,13 +2,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 
     set fish_color_error red --bold
-    set fish_color_command green 
+    set fish_color_command green --bold
     set fish_color_quote yellow
     
     
     #fish_logo 
     function fish_greeting
-        fish_logo a247b8 5fbe41 green
+        fish_logo yellow blue #magenta
     end 
 
     #setting the title of the terminal
@@ -23,10 +23,14 @@ if status is-interactive
     function fish_prompt
     set -l last_status $status
 
-    #3 arrows green version
-    set -l cyan (set_color -o b0f89b) #middle ~ green
+    set -l cyan (set_color -o fffbb6) #middle ~ 
     set -l green (set_color -o fdfffd) #outer 
-    set -g normal (set_color 6be41b) #first inner 
+    set -g normal (set_color 3366ff) #first inner 
+    
+    #3 arrows green version
+    #set -l cyan (set_color -o b0f89b) #middle ~ green
+    #set -l green (set_color -o fdfffd) #outer 
+    #set -g normal (set_color 6be41b) #first inner 
 
     # set -l green (set_color -o ef8af0) #middle 
     # set -l yellow (set_color -o ee1122) #outer 
